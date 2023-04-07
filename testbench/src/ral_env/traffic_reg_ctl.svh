@@ -1,15 +1,15 @@
 // Register definition for the register called "ctl"
 class traffic_reg_ctl extends uvm_reg;
-	rand uvm_reg_field mod_en;      // Enables the module
-	rand uvm_reg_field bl_yellow;   // Blinks yellow
-	rand uvm_reg_field bl_red;      // Blinks red
+  rand uvm_reg_field mod_en;      // Enables the module
+  rand uvm_reg_field bl_yellow;   // Blinks yellow
+  rand uvm_reg_field bl_red;      // Blinks red
   rand uvm_reg_field profile;     // 1 : Peak, 0 : Off-Peak
 
-	`uvm_object_utils(traffic_reg_ctl)
-
-	function new(string name = "traffic_reg_ctl");
-		super.new(name, 32, build_coverage(UVM_NO_COVERAGE));
-	endfunction: new
+  `uvm_object_utils(traffic_reg_ctl)
+  
+  function new(string name = "traffic_reg_ctl");
+    super.new(name, 32, build_coverage(UVM_NO_COVERAGE));
+  endfunction: new
 
   // Build all register field objects
   virtual function void build();

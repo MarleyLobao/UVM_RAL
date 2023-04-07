@@ -3,6 +3,7 @@ class traffic_reg_state extends uvm_reg;
   uvm_reg_field state;    // Current state of the design
   
   `uvm_object_utils(traffic_reg_state)
+
   function new(string name = "traffic_reg_state");
     super.new(name, 32, build_coverage(UVM_NO_COVERAGE));
   endfunction

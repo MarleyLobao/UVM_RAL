@@ -1,11 +1,12 @@
 // Register definition for the register called "timer"
 class traffic_reg_timer extends uvm_reg;
-	uvm_reg_field timer;     // Time for which it blinks
+  uvm_reg_field timer;     // Time for which it blinks
 
-	`uvm_object_utils(traffic_reg_timer)
-	function new(string name = "traffic_reg_timer");
-		super.new(name, 32,build_coverage(UVM_NO_COVERAGE));
-	endfunction
+  `uvm_object_utils(traffic_reg_timer)
+
+  function new(string name = "traffic_reg_timer");
+    super.new(name, 32,build_coverage(UVM_NO_COVERAGE));
+  endfunction
 
   virtual function void build();
      this.timer = uvm_reg_field::type_id::create("timer",,get_full_name());
