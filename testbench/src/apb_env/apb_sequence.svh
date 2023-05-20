@@ -1,6 +1,6 @@
-class apb_sequence extends uvm_sequence;
-   `uvm_object_utils (apb_sequence)
-   function new (string name = "apb_sequence");
+class apb_reset_sequence extends uvm_sequence;
+   `uvm_object_utils (apb_reset_sequence)
+   function new (string name = "apb_reset_sequence");
       super.new (name);
    endfunction
 

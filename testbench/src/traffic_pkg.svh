@@ -5,7 +5,7 @@ package traffic_pkg;
   `include "uvm_macros.svh"
 
   `include "apb_seq_item.svh"
-  `include "apb_sequence.svh"
+  `include "apb_reset_sequence.svh"
   `include "apb_driver.svh"
   `include "apb_monitor.svh"
   `include "apb_agent.svh"
