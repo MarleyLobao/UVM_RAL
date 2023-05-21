@@ -7,13 +7,19 @@ This repository organizes the ChipVerify website code so that it is executable i
 The model implemented for the abstraction layer of the registers is represented according to <b>Figure 1</b>, as well as its buses (CTL, STAT, TIMER_0 and TIMER_1) and respective fields.
 
 #### Figure 1 - Register Abstraction Layer Model
-![](https://www.chipverify.com/images/uvm/design.png)
+![](docs/design.png)
 ##### Source: <https://www.chipverify.com/images/uvm/design.png>
-<br /><br />
+<br />
 
-The result of the *traffic_reg_rw_test* is illustrated in the waveform in Figure 2.
+The abstraction used was the frontdoor, as illustrated in <b>Figure 2</b>.
+#### Figure 2 - Frontdoor Access
+![](docs/regmodel_env.jpg)
+##### Source: <https://www.chipverify.com/images/uvm/regmodel_env.png>
+<br />
 
-#### Figure 2 - Waveforms from traffic_reg_rw_test
+The result of the *traffic_reg_rw_test* is illustrated in the waveform in Figure 3.
+
+#### Figure 3 - Waveforms from traffic_reg_rw_test
 ![](https://www.chipverify.com/images/uvm/waves/reg_model_example_wave1.png)
 ##### a) ChipVerify - Source: <https://www.chipverify.com/images/uvm/waves/reg_model_example_wave1.png>
 <hr>
