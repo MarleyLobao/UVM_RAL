@@ -13,7 +13,7 @@ The model implemented for the abstraction layer of the registers is represented 
 
 The abstraction used was the frontdoor, as illustrated in <b>Figure 2</b>.
 #### Figure 2 - Frontdoor Access
-![](docs/regmodel_env.jpg)
+![](docs/regmodel_env.png)
 ##### Source: <https://www.chipverify.com/images/uvm/regmodel_env.png>
 <br />
 
