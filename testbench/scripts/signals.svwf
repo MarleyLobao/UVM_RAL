@@ -12,28 +12,28 @@ mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor or
 array unset createdGroup
 array set createdGroup {}
 set id [waveform add -signals [subst  {
-	{[format {traffic_top.vif_top.paddr[31:0]}]}
-	} ]]
-set id [waveform add -signals [subst  {
 	{[format {traffic_top.vif_top.pclk}]}
-	} ]]
-set id [waveform add -signals [subst  {
-	{[format {traffic_top.vif_top.penable}]}
-	} ]]
-set id [waveform add -signals [subst  {
-	{[format {traffic_top.vif_top.prdata[31:0]}]}
 	} ]]
 set id [waveform add -signals [subst  {
 	{[format {traffic_top.vif_top.presetn}]}
 	} ]]
 set id [waveform add -signals [subst  {
+	{[format {traffic_top.vif_top.paddr[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {traffic_top.vif_top.penable}]}
+	} ]]
+set id [waveform add -signals [subst  {
 	{[format {traffic_top.vif_top.psel}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {traffic_top.vif_top.pwrite}]}
 	} ]]
 set id [waveform add -signals [subst  {
 	{[format {traffic_top.vif_top.pwdata[31:0]}]}
 	} ]]
 set id [waveform add -signals [subst  {
-	{[format {traffic_top.vif_top.pwrite}]}
+	{[format {traffic_top.vif_top.prdata[31:0]}]}
 	} ]]
 
 waveform xview limits 0 340ns
