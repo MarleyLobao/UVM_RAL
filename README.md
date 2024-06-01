@@ -11,7 +11,6 @@ The above application refers to frontdoor access, as it performs writes and read
 [UVM Register Backdoor Access source code from ChipVerify](https://www.chipverify.com/uvm/uvm-register-backdoor-access)
 
 ## 🔨 Project Features
-<br />
 
 ### Frontdoor Access
 The model implemented for the abstraction layer of the registers is represented according to <b>Figure 1</b>, as well as its buses (CTL, STAT, TIMER_0 and TIMER_1) and respective fields.
@@ -34,8 +33,9 @@ The result of the *traffic_reg_rw_test* is illustrated in the waveform in Figure
 ##### a) ChipVerify - Source: <https://www.chipverify.com/images/uvm/waves/reg_model_example_wave1.png>
 <hr>
 
-![](docs/waveforms_rw.jpg)
+![](docs/waveforms_rw.png)
 ##### b) Author
+<br />
 
 ### Backdoor Access
 As Figure 4 illustrates, backdoor access does not use the logger model and goes directly to the under test design.
@@ -43,6 +43,7 @@ As Figure 4 illustrates, backdoor access does not use the logger model and goes 
 #### Figure 4 - Register Abstraction Layer Model with Backdoor Access
 ![](docs/backdoor_access.png)
 ##### Source: <https://www.chipverify.com/images/uvm/uvm-register-backdoor-access.png>
+<br />
 
 The result of the *traffic_reg_rw_backdoor_test* is illustrated in the waveform in Figure 5.
 
