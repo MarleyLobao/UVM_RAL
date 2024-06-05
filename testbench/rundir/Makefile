@@ -27,7 +27,7 @@ backdoor_rw:
     +UVM_TESTNAME=traffic_reg_rw_backdoor_test -define BACKDOOR_MODE $(RUN_ARGS_COMMON) $(ARGS)
 
 reset_test:
-    xrun -64bit -uvm $(PATHS) $(PKGS) $(IFS) $(RTL) $(TOP) \
+	xrun -64bit -uvm $(PATHS) $(PKGS) $(IFS) $(RTL) $(TOP) \
     +UVM_TESTNAME=traffic_reg_reset_test $(RUN_ARGS_COMMON) $(ARGS)
 
 clean:

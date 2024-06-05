@@ -58,7 +58,7 @@ The result of the *traffic_reg_rw_backdoor_test* is illustrated in the waveform 
 
 Obs (1): There is also another test called *traffic_reg_ro_backdoor_test*, for testing the Read Only registers. Although the results shown in the xrun.log file of the simulation are correct, the waveform is not coherent because RTL allows writing to this register. In other words, the RAL model is correct (according to the specification), but the DUT allows writing to the register.
 
-Obs (2): To use an integrated UVM register test as an example, there is the option of starting the native sequence *uvm_reg_hw_reset_seq*, which checks if the reset values of the registers are in conformity with the RAL model.
+Obs (2): To use an built-in UVM register sequence as an example, there is the option of starting the native sequence *uvm_reg_hw_reset_seq*, which checks if the reset values of the registers are in conformity with the RAL model. To do this, simply run the test called *traffic_reg_reset_test*.
 <br />
 
 ## 🛠️ Execute the project
