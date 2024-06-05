@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This repository organizes the ChipVerify website code so that it is executable in a verification environment that uses the Register Abstraction Layer (RAL).
+This repository organizes the ChipVerify website code so that it is executable in a verification environment that uses the Register Abstraction Layer (RAL), as well as adding new features to the testbench.
 
 [UVM Register Model Example source code from ChipVerify](https://www.chipverify.com/uvm/uvm-register-model-example)
 
@@ -56,7 +56,9 @@ The result of the *traffic_reg_rw_backdoor_test* is illustrated in the waveform 
 ##### b) Author
 <br />
 
-Obs: There is also another test called *traffic_reg_ro_backdoor_test*, for testing the Read Only registers. Although the results shown in the xrun.log file of the simulation are correct, the waveform is not coherent because RTL allows writing to this register. In other words, the RAL model is correct (according to the specification), but the DUT allows writing to the register.
+Obs (1): There is also another test called *traffic_reg_ro_backdoor_test*, for testing the Read Only registers. Although the results shown in the xrun.log file of the simulation are correct, the waveform is not coherent because RTL allows writing to this register. In other words, the RAL model is correct (according to the specification), but the DUT allows writing to the register.
+
+Obs (2): To use an integrated UVM register test as an example, there is the option of starting the native sequence *uvm_reg_hw_reset_seq*, which checks if the reset values of the registers are in conformity with the RAL model.
 <br />
 
 ## 🛠️ Execute the project

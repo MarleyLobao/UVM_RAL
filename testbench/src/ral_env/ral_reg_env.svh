@@ -16,6 +16,7 @@ class ral_reg_env extends uvm_env;
       m_apb2reg_predictor  = uvm_reg_predictor #(apb_seq_item) :: type_id :: create ("m_apb2reg_predictor", this);
 
       m_ral_model.build ();
+      m_ral_model.cfg.timer[1].set_reset(32'hface_5678, "HARD");
       m_ral_model.lock_model ();
       uvm_config_db #(ral_reg_block_sys)::set (null, "uvm_test_top", "reg_sys", m_ral_model);
    endfunction

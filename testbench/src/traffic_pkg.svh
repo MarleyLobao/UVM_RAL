@@ -22,6 +22,7 @@ package traffic_pkg;
   `include "apb_env.svh"
 
   `include "traffic_base_test.svh"
+  `include "traffic_reg_reset_test.svh"
   `include "traffic_reg_rw_test.svh"
   `include "traffic_reg_ro_backdoor_test.svh"
   `include "traffic_reg_rw_backdoor_test.svh"
